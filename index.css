@@ -1,39 +1,379 @@
-.agenda {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
+/* Container for news section */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Columns for layout */
+.left-column, .right-column {
+  width: 50%;
   padding: 20px;
-  background-color: #f2f2f2;
-  border-radius: 5px;
 }
 
-.agenda h2 {
+/* Container for individual news items */
+.news-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#news {
+  padding: 2vw 3vw 2vw 3vw;
   text-align: center;
-  margin-bottom: 20px;
 }
 
-.agenda ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
 
-.agenda li {
-  background-color: #fff;
-  padding: 15px;
+/* Style for each news item */
+.news-item {
+  border: 1px solid #ccc;
+  padding: 10px;
   margin-bottom: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.agenda h3 {
-  margin: 0;
-}
-
-.agenda p {
-  margin: 5px 0;
-}
-
-.agenda span {
+.container h2 {
+  font-size: 28px; /* Larger font size for main titles */
+  color: #2a2a72; /* Dark blue for a professional look */
   font-weight: bold;
+  text-align: left;
+  margin-bottom: 20px; /* Space below the title */
+  border-bottom: 3px solid #f0f0f0; /* Subtle bottom border */
+  padding-bottom: 10px;
+}
+
+/* Style for news item titles within right column */
+.news-details h3 {
+  font-size: 20px; /* Slightly larger font size for sub-titles */
+  color: #333; /* Dark grey for readability */
+  font-weight: bold;
+  margin-top: 0;
+  /* text-align: left; */
+  margin-bottom: 5px; /* Space below the title */
+}
+
+/* Enhance the appearance of links within news titles */
+.news-details h3 a {
+  color: #1a0dab; /* Blue color for links to stand out */
+  text-decoration: none; /* No underline */
+}
+
+.news-details h3 a:hover {
+  text-decoration: underline; /* Underline on hover for better interaction */
+}
+
+/* Additional styles for news date and content */
+.news-date {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px; /* Space below the date */
+}
+
+.news-content {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444; /* Darker text for better readability */
+}
+
+/* Header style for news items */
+.news-item h3 {
+  margin-top: 0;
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Style for news images */
+.news-image {
+  float: left;
+  width: 150px;
+  height: 100px;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+/* Style for news title */
+.news-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Style for news date */
+.news-date {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Style for news content */
+.news-content {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Video container styles */
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: white;
+  cursor: pointer;
+}
+
+
+/* Base styles for news items */
+.news-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.news-image {
+  float: left;
+  width: 150px;
+  height: 100px;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+/* Agendaa */
+/* Agenda */
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Menambahkan wrap untuk tata letak responsif */
+  justify-content: space-around;
+  padding: 15px;
+  background-color: #f8f9fa;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 30%; /* Menambahkan lebar untuk tampilan yang lebih panjang */
+  margin: 10px; /* Menambahkan margin untuk pemisahan card */
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #e9ecef;
+  border-radius: 10px;
+  padding: 12px 20px;
+  margin-bottom: 12px;
+}
+
+.date-number {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #3498db;
+  padding: 12px 20px;
+  border-radius: 10px;
+}
+
+.date-month {
+  font-size: 18px;
+  font-weight: bold;
+  color: #3498db;
+}
+
+.date-time {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #3498db;
+  margin-bottom: 10px;
+}
+
+.location {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.button {
+  background-color: #3498db;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10px;
+  margin-top: 20px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+/* fiturr kampus */
+/* fitur kampus */
+#fitur-kampus {
+  text-align: center;
+  padding: 80px 0;
+  background-color: #f8f9fa; /* Warna latar belakang diperbaiki */
+}
+
+#fitur-kampus .fk h1 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+  color: #151564;
+}
+
+#fitur-kampus .container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+#fitur-kampus .card-fitur {
+  background-color: #ffffff; /* Warna latar belakang diperbarui */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#fitur-kampus .card-fitur:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+#fitur-kampus .card-fitur::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://source.unsplash.com/300x200/?technology'); Menggunakan gambar dari latar belakang dengan efek transparansi */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  transition: opacity 0.5s;
+}
+
+#fitur-kampus .card-fitur:hover::before {
+  opacity: 0; /* Menghilangkan latar belakang gambar saat dihover */
+}
+
+#fitur-kampus .card-fitur i {
+  font-size: 2rem;
+  color: #151564; /* Warna ikon diperbarui */
+  margin-bottom: 10px;
+}
+
+#fitur-kampus .card-fitur h2,
+#fitur-kampus .card-fitur p {
+  margin: 0;
+  color: #343a40; /* Warna teks diperbarui */
+}
+
+
+/* Media Queries */
+
+/* For tablets and below */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-column, .right-column {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .news-container {
+    flex-direction: column;
+  }
+
+  .news-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .news-image {
+    float: none;
+    width: 80%; /* Adjust width to be responsive */
+    height: auto;
+    margin: 0 auto 10px;
+  }
+
+  .card {
+    width: 45%; /* Mengubah lebar card untuk layar yang lebih kecil */
+  }
+
+  #fitur-kampus .container {
+    flex-direction: column; /* Mengubah tata letak menjadi satu kolom */
+    align-items: center; /* Pusatkan item di dalam kolom */
+  }
+
+  #fitur-kampus .card-fitur {
+    width: calc(100% - 30px); /* Lebar kartu 100% minus jarak antar kartu */
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .news-item {
+    padding: 5px;
+    margin-bottom: 5px;
+  }
+
+  .news-image {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  .news-title, .news-date, .news-content {
+    font-size: 14px; /* Adjust font size for readability on small devices */
+  }
+
+  .video-container {
+    height: 200px; /* Adjust video container height */
+  }
+
+  .play-icon {
+    font-size: 36px; /* Smaller play icon */
+  }
+
+  .card {
+    width: 90%; /* Mengubah lebar card untuk layar yang sangat kecil */
+  }
 }
