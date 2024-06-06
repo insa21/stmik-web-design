@@ -47,10 +47,13 @@ nav {
 }
 
 nav img {
-  /* height: 150%; */
-  /* width: 150px; */
   cursor: pointer;
 }
+
+/* Navigation new */
+
+
+/* end */
 
 nav .navigation {
   display: flex;
@@ -71,14 +74,18 @@ nav .navigation {
   cursor: pointer;
 }
 
+
 nav .navigation ul {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 nav .navigation ul li {
-  list-style: none;
+  position: relative;
   margin-left: 30px;
 }
 
@@ -94,6 +101,33 @@ nav .navigation ul li a.active,
 nav .navigation ul li a:hover {
   color: #FDC93B;
 }
+
+nav .navigation ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  padding: 10px 0;
+  list-style: none;
+  z-index: 1000;
+}
+
+nav .navigation ul ul li {
+  margin: 0;
+  padding: 0;
+}
+
+nav .navigation ul ul li a {
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+
+nav .navigation ul li:hover>ul {
+  display: block;
+}
+
 
 
 /* Home */
@@ -1069,6 +1103,11 @@ footer .copyright .pro-links i:hover {
     display: block; /* Show menu button on small screens */
   }
 
+  /* new navigation */
+  
+
+  /* end */
+
   nav .navigation ul {
     position: absolute;
     top: 0;
@@ -1269,6 +1308,20 @@ footer .copyright .pro-links i:hover {
     object-fit: cover;
   }
 
+  header nav {
+    /* Contoh: Mengubah tata letak navigasi menjadi tumpukan vertikal */
+    flex-direction: column;
+  }
+
+  /* Anda juga mungkin ingin mengubah gaya untuk tombol menu */
+  #menu-btn {
+    /* Misalnya, untuk membuat ikon menu lebih besar */
+    width: 40px;
+    height: 40px;
+  }
+
+
+
   @media (max-width: 376px) {
     footer input {
       width: 100%;
@@ -1318,4 +1371,14 @@ footer .copyright .pro-links i:hover {
     width: 100%;
   }
 
+  header nav {
+    /* Contoh: Mengubah tata letak navigasi menjadi baris horizontal */
+    flex-direction: row;
+  }
+
+  /* Anda juga mungkin ingin mengubah gaya untuk tombol close */
+  #menu-close {
+    /* Misalnya, untuk membuat ikon close lebih besar */
+    font-size: 24px;
+  }
 }

@@ -1,17 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="path/to/your/css/file.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>School Website</title>
 </head>
+<style>
+  /* CSS untuk desktop */
+
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .navigation li {
+    margin: 0 10px;
+  }
+
+  .navigation a {
+    text-decoration: none;
+    color: black;
+  }
+
+  /* CSS untuk mobile */
+
+  @media only screen and (max-width: 768px) {
+    .navigation {
+      flex-direction: column;
+      align-items: flex-start;
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      width: 100%;
+      height: calc(100vh - 80px);
+      background-color: #f4f4f4;
+      transition: all 0.3s ease;
+    }
+
+    .navigation.active {
+      left: 0;
+    }
+
+    .navigation ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .navigation li {
+      margin: 10px 0;
+    }
+
+    .navigation a {
+      padding: 10px 20px;
+    }
+  }
+</style>
+
 <body>
-
-
-
+  <!-- navigation -->
+  <header>
+    <nav>
+      <img src="images/school/logo/school-logo.png" alt="School Logo">
+      <div class="navigation">
+        <ul>
+          <li><a class="active" href="index.html">Beranda</a></li>
+          <li><a href="profil.html">Profil</a>
+            <ul class="submenu">
+              <li><a href="sejarah.html">Sejarah</a></li>
+              <li><a href="visi-misi.html">Visi Misi</a></li>
+              <li><a href="struktur-organisasi.html">Struktur Organisasi</a></li>
+              <li><a href="sambutan-ketua.html">Sambutan Ketua</a></li>
+              <li><a href="dosen.html">Dosen</a></li>
+            </ul>
+          </li>
+          <li><a href="program-studi.html">Program Studi</a>
+            <ul class="submenu">
+              <li><a href="teknik-informatika.html">Teknik Informatika</a></li>
+              <li><a href="sistem-informasi.html">Sistem Informasi</a></li>
+            </ul>
+          </li>
+          <li><a href="siaplus.html">SIAPLUS</a>
+            <ul class="submenu">
+              <li><a href="portal-mahasiswa.html">Portal Mahasiswa</a></li>
+              <li><a href="portal-dosen.html">Portal Dosen</a></li>
+            </ul>
+          </li>
+          <li><a href="kemahasiswaan.html">Kemahasiswaan</a>
+            <ul class="submenu">
+              <li><a href="kegiatan-mahasiswa.html">Kegiatan Mahasiswa</a></li>
+              <li><a href="info-beasiswa.html">Info Beasiswa</a></li>
+              <li><a href="tata-tertib-mahasiswa.html">Tata Tertib Mahasiswa</a></li>
+            </ul>
+          </li>
+          <li><a href="alumni.html">Alumni</a>
+            <ul class="submenu">
+              <li><a href="testimoni.html">Testimoni</a></li>
+              <li><a href="forum.html">Forum</a></li>
+            </ul>
+          </li>
+          <li><a href="pendaftaran.html">Pendaftaran</a>
+            <ul class="submenu">
+              <li><a href="daftar.html">Daftar</a></li>
+              <li><a href="panduan-pendaftaran.html">Panduan Pendaftaran</a></li>
+              <li><a href="biaya-kuliah.html">Biaya Kuliah</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 </body>
+
 </html>
