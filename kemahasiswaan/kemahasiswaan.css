@@ -1,0 +1,260 @@
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* General Styles */
+h1, h2, p, ul, li {
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #151564; /* Warna khusus untuk h1 */
+}
+
+h2 {
+  margin-top: 20px;
+  color: #151564; /* Warna khusus untuk h2 */
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Program Features and Courses */
+.program-features, .program-courses {
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Kegiatan Mahasiswa Section */
+#student-activities {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+#student-activities .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#student-activities h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+#student-activities .activity {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#student-activities .activity img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+#student-activities .activity-details {
+  flex: 1;
+}
+
+#student-activities .activity-details h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+#student-activities .activity-details p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #student-activities .activity {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #student-activities .activity img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+
+  #student-activities .activity-details h2 {
+    font-size: 24px;
+  }
+
+  #student-activities .activity-details p {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
+
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* General Styles */
+h1, h2, p, ul, li {
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #151564;
+}
+
+h2 {
+  margin-top: 20px;
+  color: #151564;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Scholarship Section */
+#scholarships {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.scholarship {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.scholarship img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.scholarship-details {
+  flex: 1;
+  padding: 20px;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  
+  .scholarship {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .scholarship img {
+    max-width: 100%;
+  }
+}
+
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* General Styles */
+h1, h2, p, ul, li {
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #151564;
+}
+
+h2 {
+  margin-top: 20px;
+  color: #151564;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Student Rules Section */
+#student-rules {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+.rules-details {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+}
