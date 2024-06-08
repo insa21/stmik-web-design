@@ -1,0 +1,508 @@
+/* Variables for common colors */
+:root {
+  --primary-color: rgb(21, 21, 100);
+  --secondary-color: #FDC93B;
+  --text-color: rgb(35, 35, 85);
+  --background-color: #F9F9FF;
+}
+
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation Styles */
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 8vw;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+}
+
+nav img {
+  cursor: pointer;
+}
+
+nav .navigation {
+  display: flex;
+}
+
+#menu-btn,
+#menu-close {
+  display: none; /* Initially hidden */
+  cursor: pointer;
+}
+
+#menu-btn {
+  width: 30px;
+  height: 30px;
+}
+
+#menu-close {
+  font-size: 1.6rem;
+  color: #fff;
+  padding: 20px;
+}
+
+nav .navigation ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+}
+
+nav .navigation ul li {
+  position: relative;
+  margin-left: 30px;
+}
+
+nav .navigation ul li a {
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav .navigation ul li a.active,
+nav .navigation ul li a:hover {
+  color: var(--secondary-color);
+}
+
+nav .navigation ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  padding: 10px 0;
+  list-style: none;
+  z-index: 1000;
+}
+
+nav .navigation ul li:hover > ul {
+  display: block;
+}
+
+/* Home Section */
+#home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#home video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#home h2, #home p {
+  color: #fff;
+}
+
+#home h2 {
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+#home p {
+  width: 50%;
+  font-size: 0.9rem;
+  line-height: 25px;
+}
+
+#home .btn {
+  margin-top: 30px;
+}
+
+#home a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 13px 35px;
+  background-color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+#home a.blue {
+  color: #fff;
+  background-color: var(--primary-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#home a.blue:hover {
+  color: var(--primary-color);
+  background-color: #fff;
+}
+
+#home a.yellow {
+  color: #fff;
+  background-color: var(--secondary-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#home a.yellow:hover {
+  color: var(--secondary-color);
+  background-color: #fff;
+}
+
+/* Styles untuk bagian header dan navigasi sudah ada di kode sebelumnya */
+
+/* Bagian Fitur */
+#features {
+  padding: 8vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+#features .feature {
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+#features .feature i {
+  font-size: 2.5rem;
+  color: rgb(21, 21, 100);
+  margin-bottom: 10px;
+}
+
+#features .feature h3 {
+  color: #29303B;
+  margin-bottom: 10px;
+}
+
+#features .feature p {
+  color: #64626e;
+  text-align: justify;
+}
+
+/* Bagian Kursus */
+#courses {
+  padding: 8vw;
+}
+
+#courses .course {
+  margin-bottom: 30px;
+}
+
+#courses .course img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+#courses .course h3 {
+  color: #29303B;
+  margin-top: 15px;
+}
+
+#courses .course p {
+  color: #64626e;
+  text-align: justify;
+}
+
+#courses .course .btn a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 13px 35px;
+  background-color: rgb(21, 21, 100);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+/* Bagian Registrasi */
+#registration {
+  background: #FDC93B;
+  padding: 8vw;
+  text-align: center;
+}
+
+#registration h2 {
+  color: rgb(21, 21, 100);
+  margin-bottom: 15px;
+}
+
+#registration p {
+  color: #29303B;
+  text-align: justify;
+  margin: 15px 0;
+}
+
+#registration .btn a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 13px 35px;
+  background-color: rgb(21, 21, 100);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+/* Bagian Ahli */
+#experts {
+  padding: 8vw;
+  text-align: center;
+}
+
+#experts .expert {
+  width: 30%;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+#experts .expert img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+#experts .expert h3 {
+  color: #29303B;
+  margin-bottom: 10px;
+}
+
+#experts .expert p {
+  color: #64626e;
+}
+
+/* Bagian Blog */
+#blog {
+  padding: 8vw;
+}
+
+#blog .post {
+  width: 30%;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+#blog .post img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+#blog .post h3 {
+  color: #29303B;
+  margin-top: 15px;
+}
+
+#blog .post p {
+  color: #64626e;
+  text-align: justify;
+}
+
+/* Bagian Footer */
+footer {
+  background: #29303B;
+  color: #fff;
+  padding: 4vw;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+#contact {
+  padding: 8vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#contact .getin {
+  width: 350px;
+}
+
+#contact .getin h2 {
+  color: #29303B;
+}
+
+#contact .getin p {
+  color: #64626e;
+  text-align: justify;
+  margin: 15px 0;
+}
+
+#contact .getin .info {
+  margin-top: 30px;
+}
+
+#contact .getin .info div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#contact .getin .info div i {
+  font-size: 1.2rem;
+  color: rgb(21, 21, 100);
+  margin-right: 20px;
+}
+
+#contact .getin .info div p {
+  margin: 0;
+  color: #64626e;
+}
+
+#contact .form {
+  background: #fff;
+  padding: 40px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  width: 60%;
+}
+
+#contact .form input,
+#contact .form textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0;
+  border: 1px solid rgb(84, 40, 241);
+  outline: none;
+  font-size: 0.9rem;
+}
+
+#contact .form textarea {
+  resize: none;
+  height: 150px;
+}
+
+#contact .form .btn {
+  margin-top: 20px;
+}
+
+#contact .form .btn a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 13px 35px;
+  background-color: rgb(21, 21, 100);
+  color: #fff;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+
+#contact .form .btn a:hover {
+  background-color: #FDC93B;
+  color: rgb(21, 21, 100);
+}
+
+@media screen and (max-width: 768px) {
+  nav .navigation ul {
+    display: none; /* Hidden by default for mobile */
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  nav .navigation ul li {
+    margin: 0;
+    padding: 15px 20px;
+    width: 100%;
+  }
+
+  nav .navigation ul li a {
+    color: rgb(21, 21, 100);
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  nav #menu-btn {
+    display: block; /* Show menu button for mobile */
+  }
+
+  nav #menu-close {
+    display: block; /* Show close button for mobile */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  nav .navigation ul.show {
+    display: flex; /* Show the menu when the "show" class is added */
+  }
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  nav .navigation ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  nav .navigation ul li {
+    margin: 0;
+    padding: 15px 20px;
+    width: 100%;
+  }
+
+  nav .navigation ul li a {
+    color: rgb(21, 21, 100);
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  nav #menu-btn {
+    display: block;
+  }
+
+  nav #menu-close {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  nav .navigation ul.show {
+    display: flex;
+  }
+
+  #features .feature,
+  #courses .course,
+  #experts .expert,
+  #blog .post {
+    width: 100%;
+  }
+}
