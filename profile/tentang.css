@@ -1,0 +1,524 @@
+
+/* Navigation Styles */
+nav {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vw 8vw;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  z-index: 999;
+}
+
+nav img {
+  cursor: pointer;
+}
+
+nav .navigation {
+  display: flex;
+}
+
+#menu-btn {
+  width: 30px;
+  height: 30px;
+  display: none; /* Initially hidden */
+  cursor: pointer;
+}
+
+#menu-close {
+  display: none; /* Initially hidden */
+  font-size: 1.6rem;
+  color: #fff;
+  padding: 20px;
+  cursor: pointer;
+}
+
+
+nav .navigation ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav .navigation ul li {
+  position: relative;
+  margin-left: 30px;
+}
+
+nav .navigation ul li a {
+  text-decoration: none;
+  color: rgb(21, 21, 100);
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+nav .navigation ul li a.active,
+nav .navigation ul li a:hover {
+  color: #FDC93B;
+}
+
+nav .navigation ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  padding: 10px 0;
+  list-style: none;
+  z-index: 1000;
+}
+
+nav .navigation ul ul li {
+  margin: 0;
+  padding: 0;
+}
+
+nav .navigation ul ul li a {
+  padding: 10px 20px;
+  white-space: nowrap;
+}
+
+nav .navigation ul li:hover>ul {
+  display: block;
+}
+
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #151564;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.submenu li {
+  padding: 10px 20px;
+}
+
+.submenu li a {
+  color: #fff;
+  padding: 0;
+}
+
+.navigation ul li:hover .submenu {
+  display: block;
+}
+
+#menu-btn,
+#menu-close {
+  display: none;
+}
+
+#history {
+  background-color: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+#history h1 {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #151564;
+  margin-top: 50px;
+}
+
+#history p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.history-timeline {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.event {
+  background-color: #f4f4f9;
+  border-left: 5px solid #151564;
+  padding: 20px;
+  margin: 10px 0;
+  width: 30%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.event h3 {
+  margin-top: 0;
+  color: #151564;
+}
+
+
+.event {
+  background-color: #f4f4f9;
+  border-left: 5px solid #151564;
+  padding: 20px;
+  margin: 10px 0;
+  width: 30%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.event h3 {
+  margin-top: 0;
+  color: #151564;
+}
+
+#vision-mission {
+  background-color: #e0e4f4;
+  padding: 60px 0;
+  text-align: center;
+}
+
+#vision-mission h1 {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #151564;
+}
+
+.vision, .mission {
+  margin: 20px 0;
+}
+
+.vision h2, .mission h2 {
+  color: #151564;
+}
+
+.mission ol {
+  text-align: left;
+  margin: 0 auto;
+  display: inline-block;
+  padding-left: 20px;
+}
+
+.mission ol li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+
+
+/* Organizational Structure Section */
+#organizational-structure {
+  background-color: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+#organizational-structure h1 {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #151564;
+}
+
+.org-chart {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.org-level {
+  background-color: #f4f4f9;
+  border-left: 5px solid #151564;
+  padding: 20px;
+  margin: 10px 0;
+  width: 30%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.org-level h3 {
+  margin-top: 0;
+  color: #151564;
+}
+
+
+/* Sambutan Ketua Section */
+#chairman-message {
+  background-color: #f4f4f9;
+  padding: 60px 0;
+}
+
+#chairman-message .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#chairman-message h1 {
+  margin-bottom: 30px;
+  margin-top: 80px;
+  font-size: 2.5rem;
+  color: #151564;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+#chairman-message .chairman-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#chairman-message .chairman-photo {
+  flex: 1;
+  text-align: center;
+}
+
+#chairman-message .chairman-photo img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#chairman-message .chairman-text {
+  flex: 2;
+  text-align: justify;
+  font-family: 'Georgia', serif;
+  color: #333;
+}
+
+#chairman-message .chairman-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+#chairman-message .chairman-text p:last-of-type {
+  text-align: right;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  color: #151564;
+}
+
+
+/* Dosen Section */
+#lecturers {
+  background-color: #e0e4f4; /* Warna latar belakang bagian Dosen */
+  padding: 60px 0; /* Padding atas dan bawah */
+  text-align: center; /* Rata tengah untuk semua elemen di dalam bagian ini */
+}
+
+#lecturers .container {
+  width: 80%; /* Lebar container */
+  margin: 0 auto; /* Tengah-tengahkan container */
+  padding: 20px 0; /* Padding atas dan bawah dalam container */
+}
+
+#lecturers h1 {
+  margin-bottom: 30px; /* Margin bawah untuk judul */
+  font-size: 2.5rem; /* Ukuran font judul */
+  color: #151564; /* Warna font judul */
+}
+
+#lecturers p {
+  font-size: 1.1rem; /* Ukuran font paragraf */
+  line-height: 1.6; /* Jarak antar baris paragraf */
+  color: #555; /* Warna font paragraf */
+  margin-bottom: 50px; /* Margin bawah untuk paragraf */
+}
+
+.lecturers-grid {
+  display: flex; /* Gunakan flexbox untuk tata letak grid */
+  justify-content: space-around; /* Spasi di antara item grid */
+  flex-wrap: wrap; /* Bungkus item ke baris baru jika perlu */
+}
+
+.lecturer {
+  background-color: #fff; /* Warna latar belakang kartu dosen */
+  padding: 20px; /* Padding di dalam kartu dosen */
+  margin: 10px; /* Margin di sekitar kartu dosen */
+  width: 30%; /* Lebar kartu dosen */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan di sekitar kartu dosen */
+  text-align: center; /* Rata tengah untuk teks di dalam kartu dosen */
+}
+
+.lecturer img {
+  width: 100%; /* Lebar gambar penuh */
+  height: auto; /* Tinggi gambar otomatis */
+  border-radius: 50%; /* Gambar berbentuk lingkaran */
+  margin-bottom: 20px; /* Margin bawah untuk gambar */
+}
+
+.lecturer h3 {
+  margin-top: 0; /* Hapus margin atas untuk judul */
+  color: #151564; /* Warna font judul */
+}
+
+.lecturer p {
+  color: #555; /* Warna font deskripsi */
+}
+
+/* Tentang Section */
+#about {
+  background-color: #f4f4f9; /* Warna latar belakang bagian Tentang */
+  padding: 60px 0; /* Padding atas dan bawah */
+  text-align: center; /* Rata tengah untuk semua elemen di dalam bagian ini */
+}
+
+#about .container {
+  width: 80%; /* Lebar container */
+  margin: 0 auto; /* Tengah-tengahkan container */
+  padding: 20px 0; /* Padding atas dan bawah dalam container */
+}
+
+#about h1 {
+  margin-bottom: 30px; /* Margin bawah untuk judul */
+  font-size: 2.5rem; /* Ukuran font judul */
+  color: #151564; /* Warna font judul */
+}
+
+#about p {
+  font-size: 1.1rem; /* Ukuran font paragraf */
+  line-height: 1.6; /* Jarak antar baris paragraf */
+  color: #555; /* Warna font paragraf */
+  margin-bottom: 50px; /* Margin bawah untuk paragraf */
+}
+
+
+/* Footer */
+footer {
+  background-color: #151564;
+  color: #fff;
+  padding: 30px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-col {
+  margin: 10px 0;
+}
+
+.footer-col h3 {
+  margin-bottom: 10px;
+  color: #fdc93b;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 0.9rem;
+}
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .event,
+  .org-level {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 95%;
+  }
+
+  .event,
+  .org-level {
+    padding: 10px;
+  }
+}
+
+/* Media Query untuk ukuran layar yang lebih kecil */
+@media (max-width: 1200px) {
+  .lecturer {
+    width: 45%; /* Lebar 45% untuk layar dengan lebar maksimum 1200px */
+  }
+}
+
+@media (max-width: 768px) {
+  .lecturer {
+    width: 100%; /* Lebar 100% untuk layar dengan lebar maksimum 768px */
+  }
+
+  .lecturers-list {
+    flex-direction: column;
+    align-items: center;
+  }
+  #chairman-message h1 {
+    font-size: 2rem; /* Ukuran font judul lebih kecil untuk layar dengan lebar maksimum 768px */
+  }
+
+  #chairman-message p {
+    font-size: 1rem; /* Ukuran font paragraf lebih kecil untuk layar dengan lebar maksimum 768px */
+  }
+  #about-us h1 {
+    font-size: 2rem; /* Ukuran font judul lebih kecil untuk layar dengan lebar maksimum 768px */
+  }
+
+  #about-us p {
+    font-size: 1rem; /* Ukuran font paragraf lebih kecil untuk layar dengan lebar maksimum 768px */
+  }
+}
+
+@media (max-width: 576px) {
+  #lecturers h1 {
+    font-size: 2rem; /* Ukuran font judul lebih kecil untuk layar dengan lebar maksimum 576px */
+  }
+
+  .lecturer {
+    padding: 15px; /* Padding lebih kecil untuk layar dengan lebar maksimum 576px */
+  }
+
+  .lecturer h3 {
+    font-size: 1.2rem; /* Ukuran font nama dosen lebih kecil untuk layar dengan lebar maksimum 576px */
+  }
+
+  .lecturer p {
+    font-size: 0.9rem; /* Ukuran font deskripsi lebih kecil untuk layar dengan lebar maksimum 576px */
+  }
+  #chairman-message h1 {
+    font-size: 1.8rem; /* Ukuran font judul lebih kecil untuk layar dengan lebar maksimum 576px */
+  }
+
+  #chairman-message p {
+    font-size: 0.9rem; /* Ukuran font paragraf lebih kecil untuk layar dengan lebar maksimum 576px */
+  }
+
+  #about-us h1 {
+    font-size: 1.8rem; /* Ukuran font judul lebih kecil untuk layar dengan lebar maksimum 576px */
+  }
+
+  #about-us p {
+    font-size: 0.9rem; /* Ukuran font paragraf lebih kecil untuk layar dengan lebar maksimum 576px */
+  }
+}
