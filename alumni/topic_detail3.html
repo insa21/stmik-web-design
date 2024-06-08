@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web design university</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="alumni.css">
+</head>
+
+<body>
+  <!-- navigation -->
+  <header>
+    <nav>
+      <img src="../../images/stmik/logo/STMIK JABAR (1).png" alt="logo" class="logo">
+      <div class="navigation">
+        <ul>
+          <i id="menu-close" class="fas fa-times"></i><!-- Tombol Close -->
+          <li><a class="active" href="index.html">Home</a></li>
+          <li>
+            <a href="#">Tentang Kami</a>
+            <ul class="submenu">
+              <li><a href="history.html">Sejarah</a></li>
+              <li><a href="vision-mission.html">Visi Misi</a></li>
+              <li><a href="organizational-structure.html">Struktur Organisasi</a></li>
+              <li><a href="chairman-message.html">Sambutan Ketua</a></li>
+              <li><a href="lecturers.html">Dosen</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Program Studi</a>
+            <ul class="submenu">
+              <li><a href="informatics-engineering.html">Teknik Informatika</a></li>
+              <li><a href="information-systems.html">Sistem Informasi</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Siaplus</a>
+            <ul class="submenu">
+              <li><a href="student-portal.html">Portal Mahasiswa</a></li>
+              <li><a href="lecturer-portal.html">Portal Dosen</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Kemahasiswaan</a>
+            <ul class="submenu">
+              <li><a href="student-activities.html">Kegiatan Mahasiswa</a></li>
+              <li><a href="scholarship-info.html">Info Beasiswa</a></li>
+              <li><a href="student-regulations.html">Tata Tertib Mahasiswa</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Alumni</a>
+            <ul class="submenu">
+              <li><a href="testimonials.html">Testimoni</a></li>
+              <li><a href="forum.html">Forum</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Pendaftaran</a>
+            <ul class="submenu">
+              <li><a href="register.html">Daftar</a></li>
+              <li><a href="registration-guide.html">Panduan Pendaftaran</a></li>
+              <li><a href="tuition-fees.html">Biaya Kuliah</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <img id="menu-btn" src="../images/menu.png" alt="Menu Button">
+      </div>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section id="about-home">
+    <h2>Kemahasiswaan / Teknologi Cloud</h2>
+    </div>
+  </section>
+
+  <!-- Discussion Section -->
+  <section id="discussion">
+    <div class="container">
+      <div class="post">
+        <h2>Pertanyaan dari Mahasiswa</h2>
+        <p>Bagaimana teknologi cloud computing dapat diimplementasikan dalam bisnis dan industri? Mohon berbagi
+          pengalaman dan panduan. Terima kasih!</p>
+        <p><strong>Oleh: Fajar Pratama</strong></p>
+      </div>
+      <div class="responses">
+        <h2>Tanggapan</h2>
+        <div class="response">
+          <p>Teknologi cloud dapat diimplementasikan dalam bisnis dengan memanfaatkan layanan seperti AWS atau Google
+            Cloud untuk menyimpan dan mengelola data secara efisien.</p>
+          <p><strong>Oleh: Dina Safitri</strong></p>
+        </div>
+        <div class="response">
+          <p>Penggunaan teknologi cloud dalam industri dapat meningkatkan skalabilitas dan fleksibilitas operasional,
+            serta mengurangi biaya infrastruktur IT.</p>
+          <p><strong>Oleh: Hendra Gunawan</strong></p>
+        </div>
+      </div>
+      <div class="new-response">
+        <h2>Beri Tanggapan</h2>
+        <form action="#">
+          <textarea name="response" rows="5" placeholder="Tulis tanggapan Anda di sini..."></textarea>
+          <button type="submit">Kirim</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-col">
+        <h3>Contact Us</h3>
+        <ul>
+          <li>Email: info@stmikjabar.ac.id</li>
+          <li>Phone: (022) 1234567</li>
+          <li>Address: Jl. Merdeka No. 10, Bandung</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 STMIK JABAR. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+<script>
+  // JavaScript untuk toggle menu pada mobile
+  document.addEventListener('DOMContentLoaded', function () {
+    const menuBtn = document.getElementById('menu-btn');
+    const menuClose = document.getElementById('menu-close');
+    const nav = document.querySelector('nav .navigation');
+
+    menuBtn.addEventListener('click', function () {
+      nav.classList.add('active');
+    });
+
+    menuClose.addEventListener('click', function () {
+      nav.classList.remove('active');
+    });
+  });
+
+</script>
+
+</html>
