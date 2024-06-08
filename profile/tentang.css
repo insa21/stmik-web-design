@@ -488,6 +488,10 @@ footer {
   #about-us p {
     font-size: 1rem; /* Ukuran font paragraf lebih kecil untuk layar dengan lebar maksimum 768px */
   }
+
+  .lecturer {
+    flex-basis: calc(50% - 40px);
+  }
 }
 
 @media (max-width: 576px) {
@@ -521,4 +525,8 @@ footer {
   #about-us p {
     font-size: 0.9rem; /* Ukuran font paragraf lebih kecil untuk layar dengan lebar maksimum 576px */
   }
+  .lecturer {
+    flex-basis: 100%;
+  }
+
 }
