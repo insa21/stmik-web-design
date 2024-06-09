@@ -25,13 +25,43 @@ h3 {
   font-size: 1.2rem;
   font-weight: 600;
   color: rgb(46, 46, 59);
-  padding: 13px 0 7px 0; 
+  padding: 13px 0 7px 0;
 }
 
 h6 {
   font-size: 1.1rem;
   color: rgb(24, 24, 49);
 }
+
+
+/* Scroll */
+
+#backToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  background-color: #232355;
+  padding: 10px;
+  /* Ubah padding untuk ukuran tombol */
+  border-radius: 20%;
+  cursor: pointer;
+  fill: white;
+  /* Warna ikon */
+  transition: background-color 0.3s ease;
+}
+
+#backToTopBtn:hover {
+  background-color: #000;
+}
+
+/* Animasi guliran ke atas */
+html {
+  scroll-behavior: smooth;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+  transition-duration: 1s;
+}
+
 
 /* Navigation Styles */
 nav {
@@ -57,12 +87,14 @@ nav .navigation {
 #menu-btn {
   width: 30px;
   height: 30px;
-  display: none; /* Initially hidden */
+  display: none;
+  /* Initially hidden */
   cursor: pointer;
 }
 
 #menu-close {
-  display: none; /* Initially hidden */
+  display: none;
+  /* Initially hidden */
   font-size: 1.6rem;
   color: #fff;
   padding: 20px;
@@ -215,6 +247,7 @@ nav .navigation ul li:hover>ul {
   color: #FDC93B;
   background-color: #fff;
 }
+
 /* Features */
 
 #features {
@@ -449,8 +482,10 @@ footer .footer-col {
 
 
 .footer-col .logo {
-  width: 180px; /* Sesuaikan ukuran sesuai kebutuhan */
-  height: auto; /* Biarkan tinggi otomatis agar proporsi gambar tetap */
+  width: 180px;
+  /* Sesuaikan ukuran sesuai kebutuhan */
+  height: auto;
+  /* Biarkan tinggi otomatis agar proporsi gambar tetap */
 }
 
 
@@ -560,7 +595,7 @@ footer .copyright .pro-links i:hover {
   padding-top: 40px;
 }
 
-#about-home h2{
+#about-home h2 {
   color: #fff;
   font-size: 2.2rem;
   letter-spacing: 1px;
@@ -577,7 +612,7 @@ footer .copyright .pro-links i:hover {
   padding-right: 60px;
 }
 
-#about-container .about-img img{
+#about-container .about-img img {
   width: 100%;
 }
 
@@ -585,31 +620,31 @@ footer .copyright .pro-links i:hover {
   width: 40%;
 }
 
-#about-container .about-text h2{
+#about-container .about-text h2 {
   color: #29303B;
-  padding-bottom:15px ;
+  padding-bottom: 15px;
 }
 
-#about-container .about-text p{
+#about-container .about-text p {
   color: #686f7A;
   font-weight: 300;
 }
 
-#about-container .about-text .about-fe{
+#about-container .about-text .about-fe {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 30px;
 }
 
-#about-container .about-text .about-fe img{
+#about-container .about-text .about-fe img {
   width: 50px;
   background-size: cover;
   background-position: center;
   margin-right: 20px;
 }
 
-#about-container .about-text .about-fe .fe-text h5{
+#about-container .about-text .about-fe .fe-text h5 {
   font-size: 16px;
   color: #29303B;
 }
@@ -617,7 +652,7 @@ footer .copyright .pro-links i:hover {
 #trust {
   text-align: center;
   padding: 8vw;
-} 
+}
 
 #trust .trust-img {
   margin-top: 60px;
@@ -654,7 +689,7 @@ footer .copyright .pro-links i:hover {
   padding-bottom: 60px !important;
 }
 
-#blog-container .blogs img{
+#blog-container .blogs img {
   width: 100%;
   border-radius: 19px;
   -webkit-border-radius: 19px;
@@ -686,7 +721,7 @@ footer .copyright .pro-links i:hover {
   width: 30%;
 }
 
-#blog-container .cate h2 { 
+#blog-container .cate h2 {
   padding-top: 7px;
 }
 
@@ -698,7 +733,7 @@ footer .copyright .pro-links i:hover {
 }
 
 /* Course Inner */
-#course-inner{
+#course-inner {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -739,11 +774,11 @@ footer .copyright .pro-links i:hover {
 #course-inner .overview .course-head .c-name .start {
   margin: 6px 0;
 }
- 
+
 #course-inner .overview .course-head .c-name .start i {
   color: #FDC93B;
   font-size: 0.9rem;
-} 
+}
 
 #course-inner .overview .course-head .c-name p {
   font-size: 15px;
@@ -777,7 +812,7 @@ footer .copyright .pro-links i:hover {
   display: flex;
 }
 
-#course-inner .tutor img{
+#course-inner .tutor img {
   width: 70px;
   height: 70px;
   margin-right: 20px;
@@ -816,7 +851,8 @@ footer .copyright .pro-links i:hover {
 
 /* Overview Section */
 #course-inner .overview {
-  width: calc(70% - 20px); /* Adjusted to allow space for the enroll section */
+  width: calc(70% - 20px);
+  /* Adjusted to allow space for the enroll section */
 }
 
 #course-inner .overview .course-img {
@@ -905,7 +941,8 @@ footer .copyright .pro-links i:hover {
   padding: 0 30px 30px 30px;
   box-shadow: 0px 20px 40px 0 rgb(11 2 55 / 8%);
   border-radius: 11px;
-  margin-left: 20px; /* Add some space between the overview and enroll sections */
+  margin-left: 20px;
+  /* Add some space between the overview and enroll sections */
 }
 
 #course-inner .enroll h3 {
@@ -985,25 +1022,25 @@ footer .copyright .pro-links i:hover {
   margin-bottom: 15px;
 }
 
-#contact .getin .getin-details div{
+#contact .getin .getin-details div {
   display: flex;
 }
 
-#contact .getin .getin-details div .get{
+#contact .getin .getin-details div .get {
   font-size: 16px;
   line-height: 22px;
   color: #5838fc;
   margin-right: 20px;
 }
 
-#contact .getin .getin-details div p{
+#contact .getin .getin-details div p {
   font-size: 14px;
   border-bottom: none;
   line-height: 22px;
   margin-bottom: 15px;
 }
 
-#contact .getin .getin-details .pro-links i{
+#contact .getin .getin-details .pro-links i {
   margin-right: 8px;
 }
 
@@ -1025,7 +1062,7 @@ footer .copyright .pro-links i:hover {
   margin-bottom: 8px;
 }
 
-#contact .form p{
+#contact .form p {
   color: #686875;
   line-height: 24px;
   padding-bottom: 25px;
@@ -1037,7 +1074,7 @@ footer .copyright .pro-links i:hover {
   width: 100%;
 }
 
-#contact .form .form-row input{
+#contact .form .form-row input {
   width: 48%;
   font-size: 14px;
   font-weight: 400;
@@ -1109,7 +1146,8 @@ footer .copyright .pro-links i:hover {
   }
 
   #menu-btn {
-    display: block; /* Show menu button on small screens */
+    display: block;
+    /* Show menu button on small screens */
   }
 
   nav .navigation ul {
@@ -1128,7 +1166,7 @@ footer .copyright .pro-links i:hover {
     transition: 0.3s ease;
   }
 
-  
+
   nav .navigation ul ul {
     position: static;
     background-color: rgba(17, 20, 104, 0.45);
@@ -1142,7 +1180,8 @@ footer .copyright .pro-links i:hover {
   }
 
   #menu-close {
-    display: block; /* Show close button when menu is active */
+    display: block;
+    /* Show close button when menu is active */
     color: #fff;
   }
 
@@ -1165,8 +1204,10 @@ footer .copyright .pro-links i:hover {
   }
 
   #home video {
-    object-fit: contain; /* Ensure video fits well on smaller screens */
+    object-fit: contain;
+    /* Ensure video fits well on smaller screens */
   }
+
   #home p {
     width: 90%;
   }
@@ -1249,7 +1290,7 @@ footer .copyright .pro-links i:hover {
   #contact .getin {
     width: 250px;
   }
-  
+
 
   @media (max-width: 475px) {
     #registration {
@@ -1274,10 +1315,11 @@ footer .copyright .pro-links i:hover {
       flex-direction: column-reverse;
     }
 
-    #about-container .about-img{
+    #about-container .about-img {
       width: 100%;
       padding-right: 0px;
     }
+
     #about-container .about-text {
       width: 100%;
       padding-bottom: 20px;
@@ -1291,7 +1333,7 @@ footer .copyright .pro-links i:hover {
       flex-wrap: wrap;
     }
 
-    #trust .trust-img img{
+    #trust .trust-img img {
       width: 60px;
       margin: 10px 15px;
       height: auto;
@@ -1307,7 +1349,7 @@ footer .copyright .pro-links i:hover {
     width: 100%;
   }
 
-  #blog-container .cate{
+  #blog-container .cate {
     width: 100%;
   }
 
@@ -1339,18 +1381,18 @@ footer .copyright .pro-links i:hover {
       width: 100%;
       margin-bottom: 20px;
     }
-    
+
   }
 
-  #course-inner .overview .course-head .c-name{
+  #course-inner .overview .course-head .c-name {
     width: 50%;
   }
 
-  #course-inner .overview .course-head .c-name h2{
+  #course-inner .overview .course-head .c-name h2 {
     font-size: 22px;
   }
 
-  #course-inner .overview .course-head span{
+  #course-inner .overview .course-head span {
     font-size: 22px;
   }
 

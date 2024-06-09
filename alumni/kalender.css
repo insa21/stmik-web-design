@@ -1,0 +1,120 @@
+/* Tampilan Semester Ganjil */
+#semester-ganjil {
+  background-color: #f0f4f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  margin-right: 20px;
+  /* Penambahan margin di kanan */
+  margin-left: 20px;
+  /* Penambahan margin di kiri */
+}
+
+#semester-ganjil h2 {
+  color: #2c3e50;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+#semester-ganjil ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#semester-ganjil li {
+  color: #34495e;
+  margin-bottom: 8px;
+}
+
+/* Tampilan Semester Genap */
+#semester-genap {
+  background-color: #f0f4f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  margin-right: 20px;
+  /* Penambahan margin di kanan */
+  margin-left: 20px;
+  /* Penambahan margin di kiri */
+}
+
+#semester-genap h2 {
+  color: #2c3e50;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+#semester-genap ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#semester-genap li {
+  color: #34495e;
+  margin-bottom: 8px;
+}
+
+/* Tampilan Libur Akademik */
+#libur-akademik,
+#libur-akademik-genap {
+  background-color: #f0f4f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  margin-right: 20px;
+  /* Penambahan margin di kanan */
+  margin-left: 20px;
+  /* Penambahan margin di kiri */
+}
+
+#libur-akademik h2,
+#libur-akademik-genap h2 {
+  color: #2c3e50;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+#libur-akademik ul,
+#libur-akademik-genap ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#libur-akademik li,
+#libur-akademik-genap li {
+  color: #34495e;
+  margin-bottom: 8px;
+}
+
+/* Responsif untuk Semua Section */
+section {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+
+  /* Responsif untuk Kalender Akademik */
+  #semester-ganjil,
+  #semester-genap,
+  #libur-akademik,
+  #libur-akademik-genap {
+    padding: 15px;
+  }
+
+  #semester-ganjil h2,
+  #semester-genap h2,
+  #libur-akademik h2,
+  #libur-akademik-genap h2 {
+    font-size: 20px;
+  }
+
+  #semester-ganjil li,
+  #semester-genap li,
+  #libur-akademik li,
+  #libur-akademik-genap li {
+    font-size: 14px;
+  }
+}
