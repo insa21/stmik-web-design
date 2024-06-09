@@ -1,0 +1,56 @@
+#kegiatan-detail {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+#kegiatan-detail .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#kegiatan-detail h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.kegiatan-detail {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.kegiatan-detail img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.kegiatan-info {
+  flex: 1;
+}
+
+.kegiatan-info h3 {
+  color: #151564;
+  margin-bottom: 10px;
+}
+
+.kegiatan-info p {
+  margin-bottom: 10px;
+}
+
+.kegiatan-info .back-btn {
+  display: inline-block;
+  color: #fff;
+  background-color: #151564;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.kegiatan-info .back-btn:hover {
+  background-color: #0a0a56;
+}
