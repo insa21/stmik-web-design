@@ -4,16 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web design university</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <title>STMIK Jabar - Belajar Desain Web dari Ahlinya</title>
+  <meta name="description"
+    content="STMIK Jabar menawarkan program pendidikan lengkap untuk belajar desain web dari para ahli. Pelajari HTML, CSS, JavaScript, dan banyak lagi di STMIK Jabar.">
+  <meta name="keywords"
+    content="STMIK Jabar, universitas desain web, pendidikan desain web, belajar desain web, HTML, CSS, JavaScript, program desain web">
+  <meta name="author" content="STMIK Jabar">
+
   <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" href="images/stmik/logo/1/file (1).png" type="image/png">
 </head>
 
 <body>
@@ -21,20 +27,70 @@
   <!-- navigation -->
   <header>
     <nav>
-      <img src="images/logo.svg" alt="logo">
+      <a href="index.html">
+        <img src="images/stmik/logo/STMIK JABAR (1).png" alt="logo" class="logo">
+      </a>
       <div class="navigation">
         <ul>
           <i id="menu-close" class="fas fa-times"></i><!-- Tombol Close -->
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a class="active" href="blog.html">Blog</a></li>
-          <li><a href="course.html">Course</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a class="active" href="index.html">Beranda</a></li>
+          <li>
+            <a href="#">Tentang</a>
+            <ul class="submenu">
+              <li><a href="profile/sambutan.html">Sambutan Ketua</a></li>
+              <li><a href="profile/sejarah.html">Sejarah</a></li>
+              <li><a href="profile/visimisi.html">Visi Misi</a></li>
+              <li><a href="profile/struktur_organisasi.html">Struktur Organisasi</a></li>
+              <li><a href="profile/dosen.html">Dosen</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Program Studi</a>
+            <ul class="submenu">
+              <li><a href="prodi/if.html">Teknik Informatika</a></li>
+              <li><a href="prodi/si.html">Sistem Informasi</a></li>
+            </ul>
+          </li>
+          <!-- <li>
+            <a href="#">Siaplus</a>
+            <ul class="submenu">
+              <li><a href="student-portal.html">Portal Mahasiswa</a></li>
+              <li><a href="lecturer-portal.html">Portal Dosen</a></li>
+            </ul>
+          </li> -->
+          <li>
+            <a href="#">Kemahasiswaan</a>
+            <ul class="submenu">
+              <li><a href="kemahasiswaan/kegiatan_mahasiswa.html">Kegiatan Mahasiswa</a></li>
+              <li><a href="kemahasiswaan/beasiswa.html">Info Beasiswa</a></li>
+              <li><a href="kemahasiswaan/tata_tertib.html">Tata Tertib Mahasiswa</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="">Akademik</a>
+            <ul class="submenu">
+              <li><a href="alumni/forum.html">Forum</a></li>
+              <li><a href="alumni/kalender.html">Kalender Akademik</a></li>
+              <li><a href="alumni/testimoni.html">Testimoni</a></li>
+              <li><a href="alumni/pengabdian.html">Pengabdian</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="https://pmb.stmikjabar.ac.id/" target="_blank">Pendaftaran</a>
+            <!-- <ul class="submenu">
+              <li><a href="register.html">Daftar</a></li>
+              <li><a href="registration-guide.html">Panduan Pendaftaran</a></li>
+              <li><a href="tuition-fees.html">Biaya Kuliah</a></li>
+              <li><a href="tuition-fees.html">Biaya Kuliah</a></li>
+            </ul> -->
+          </li>
+          <li><a href="contact.html">Kontak</a></li>
         </ul>
         <img id="menu-btn" src="images/menu.png" alt="Menu Button">
       </div>
     </nav>
   </header>
+
 
 
   <main>
@@ -71,7 +127,11 @@
             Corrupti, alias autem vero, doloremque voluptatem quam officiis aut adipisci tenetur hic, eos aliquam
             voluptates ipsam magnam ipsa. Aut quos sequi, explicabo quisquam assumenda modi inventore amet labore
             incidunt magni omnis iste repellat maxime temporibus culpa sit est dignissimos neque commodi impedit cumque
-            esse nemo! Quidem et iure sapiente quo. Corrupti, quae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, eum. Tempore autem laborum officiis nostrum accusantium distinctio, recusandae at nulla quibusdam possimus similique labore ex maxime minima illo molestias, quam mollitia error quas, quidem ab est harum! Ea reiciendis eaque voluptas asperiores, veniam dicta dolore totam quis molestias nesciunt nisi? Laborum quasi quaerat reprehenderit!
+            esse nemo! Quidem et iure sapiente quo. Corrupti, quae! Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Sunt, eum. Tempore autem laborum officiis nostrum accusantium distinctio, recusandae at nulla
+            quibusdam possimus similique labore ex maxime minima illo molestias, quam mollitia error quas, quidem ab est
+            harum! Ea reiciendis eaque voluptas asperiores, veniam dicta dolore totam quis molestias nesciunt nisi?
+            Laborum quasi quaerat reprehenderit!
             <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro tenetur iure hic necessitatibus
             dolore. Facere animi eaque consectetur ratione cumque cupiditate iste ad at ipsum molestiae? Ducimus saepe
             veritatis illum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta aut facere cum cumque quod
@@ -80,7 +140,8 @@
             Corrupti, alias autem vero, doloremque voluptatem quam officiis aut adipisci tenetur hic, eos aliquam
             voluptates ipsam magnam ipsa. Aut quos sequi, explicabo quisquam assumenda modi inventore amet labore
             incidunt magni omnis iste repellat maxime temporibus culpa sit est dignissimos neque commodi impedit cumque
-            esse nemo! Quidem et iure sapiente quo. Corrupti, quae! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora similique rem itaque iure.
+            esse nemo! Quidem et iure sapiente quo. Corrupti, quae! Lorem, ipsum dolor sit amet consectetur adipisicing
+            elit. Tempora similique rem itaque iure.
           </p>
           <a href="#">Read Next ?</a>
         </div>

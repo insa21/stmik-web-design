@@ -4,13 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web design university</title>
+  <title>STMIK Jabar - Belajar Desain Web dari Ahlinya</title>
+  <meta name="description"
+    content="STMIK Jabar menawarkan program pendidikan lengkap untuk belajar desain web dari para ahli. Pelajari HTML, CSS, JavaScript, dan banyak lagi di STMIK Jabar.">
+  <meta name="keywords"
+    content="STMIK Jabar, universitas desain web, pendidikan desain web, belajar desain web, HTML, CSS, JavaScript, program desain web">
+  <meta name="author" content="STMIK Jabar">
+
   <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="icon" href="images/stmik/logo/1/file (1).png" type="image/png">
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="tentang.css">
 </head>
@@ -22,65 +30,71 @@
   <!-- navigation -->
   <header>
     <nav>
-      <img src="../../images/stmik/logo/STMIK JABAR (1).png" alt="logo" class="logo">
+      <a href="index.html">
+        <img src="images/stmik/logo/STMIK JABAR (1).png" alt="logo" class="logo">
+      </a>
       <div class="navigation">
         <ul>
           <i id="menu-close" class="fas fa-times"></i><!-- Tombol Close -->
-          <li><a class="active" href="index.html">Home</a></li>
+          <li><a class="active" href="index.html">Beranda</a></li>
           <li>
-            <a href="#">Tentang Kami</a>
+            <a href="#">Tentang</a>
             <ul class="submenu">
-              <li><a href="history.html">Sejarah</a></li>
-              <li><a href="vision-mission.html">Visi Misi</a></li>
-              <li><a href="organizational-structure.html">Struktur Organisasi</a></li>
-              <li><a href="chairman-message.html">Sambutan Ketua</a></li>
-              <li><a href="lecturers.html">Dosen</a></li>
+              <li><a href="profile/sambutan.html">Sambutan Ketua</a></li>
+              <li><a href="profile/sejarah.html">Sejarah</a></li>
+              <li><a href="profile/visimisi.html">Visi Misi</a></li>
+              <li><a href="profile/struktur_organisasi.html">Struktur Organisasi</a></li>
+              <li><a href="profile/dosen.html">Dosen</a></li>
             </ul>
           </li>
           <li>
             <a href="#">Program Studi</a>
             <ul class="submenu">
-              <li><a href="informatics-engineering.html">Teknik Informatika</a></li>
-              <li><a href="information-systems.html">Sistem Informasi</a></li>
+              <li><a href="prodi/if.html">Teknik Informatika</a></li>
+              <li><a href="prodi/si.html">Sistem Informasi</a></li>
             </ul>
           </li>
-          <li>
+          <!-- <li>
             <a href="#">Siaplus</a>
             <ul class="submenu">
               <li><a href="student-portal.html">Portal Mahasiswa</a></li>
               <li><a href="lecturer-portal.html">Portal Dosen</a></li>
             </ul>
-          </li>
+          </li> -->
           <li>
             <a href="#">Kemahasiswaan</a>
             <ul class="submenu">
-              <li><a href="student-activities.html">Kegiatan Mahasiswa</a></li>
-              <li><a href="scholarship-info.html">Info Beasiswa</a></li>
-              <li><a href="student-regulations.html">Tata Tertib Mahasiswa</a></li>
+              <li><a href="kemahasiswaan/kegiatan_mahasiswa.html">Kegiatan Mahasiswa</a></li>
+              <li><a href="kemahasiswaan/beasiswa.html">Info Beasiswa</a></li>
+              <li><a href="kemahasiswaan/tata_tertib.html">Tata Tertib Mahasiswa</a></li>
             </ul>
           </li>
           <li>
-            <a href="#">Alumni</a>
+            <a href="">Akademik</a>
             <ul class="submenu">
-              <li><a href="testimonials.html">Testimoni</a></li>
-              <li><a href="forum.html">Forum</a></li>
+              <li><a href="alumni/forum.html">Forum</a></li>
+              <li><a href="alumni/kalender.html">Kalender Akademik</a></li>
+              <li><a href="alumni/testimoni.html">Testimoni</a></li>
+              <li><a href="alumni/pengabdian.html">Pengabdian</a></li>
             </ul>
           </li>
           <li>
-            <a href="#">Pendaftaran</a>
-            <ul class="submenu">
+            <a href="https://pmb.stmikjabar.ac.id/" target="_blank">Pendaftaran</a>
+            <!-- <ul class="submenu">
               <li><a href="register.html">Daftar</a></li>
               <li><a href="registration-guide.html">Panduan Pendaftaran</a></li>
               <li><a href="tuition-fees.html">Biaya Kuliah</a></li>
-            </ul>
+              <li><a href="tuition-fees.html">Biaya Kuliah</a></li>
+            </ul> -->
           </li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Kontak</a></li>
         </ul>
-        <img id="menu-btn" src="../images/menu.png" alt="Menu Button">
+        <img id="menu-btn" src="images/menu.png" alt="Menu Button">
       </div>
     </nav>
   </header>
-  
+
+
   <!-- Sambutan Ketua Section -->
   <section id="chairman-message">
     <div class="container">
