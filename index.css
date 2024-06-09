@@ -30,50 +30,62 @@
   padding: 10px;
   margin-bottom: 10px;
   background: white;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .container h2 {
-  font-size: 28px; /* Larger font size for main titles */
-  color: #2a2a72; /* Dark blue for a professional look */
+  font-size: 28px;
+  /* Larger font size for main titles */
+  color: #2a2a72;
+  /* Dark blue for a professional look */
   font-weight: bold;
   text-align: left;
-  margin-bottom: 20px; /* Space below the title */
-  border-bottom: 3px solid #f0f0f0; /* Subtle bottom border */
+  margin-bottom: 20px;
+  /* Space below the title */
+  border-bottom: 3px solid #f0f0f0;
+  /* Subtle bottom border */
   padding-bottom: 10px;
 }
 
 /* Style for news item titles within right column */
 .news-details h3 {
-  font-size: 20px; /* Slightly larger font size for sub-titles */
-  color: #333; /* Dark grey for readability */
+  font-size: 20px;
+  /* Slightly larger font size for sub-titles */
+  color: #333;
+  /* Dark grey for readability */
   font-weight: bold;
   margin-top: 0;
   /* text-align: left; */
-  margin-bottom: 5px; /* Space below the title */
+  margin-bottom: 5px;
+  /* Space below the title */
 }
 
 /* Enhance the appearance of links within news titles */
 .news-details h3 a {
-  color: #1a0dab; /* Blue color for links to stand out */
-  text-decoration: none; /* No underline */
+  color: #1a0dab;
+  /* Blue color for links to stand out */
+  text-decoration: none;
+  /* No underline */
 }
 
 .news-details h3 a:hover {
-  text-decoration: underline; /* Underline on hover for better interaction */
+  text-decoration: underline;
+  /* Underline on hover for better interaction */
 }
 
 /* Additional styles for news date and content */
 .news-date {
   font-size: 14px;
   color: #666;
-  margin-bottom: 5px; /* Space below the date */
+  margin-bottom: 5px;
+  /* Space below the date */
 }
 
 .news-content {
   font-size: 16px;
   line-height: 1.6;
-  color: #444; /* Darker text for better readability */
+  color: #444;
+  /* Darker text for better readability */
 }
 
 /* Header style for news items */
@@ -116,7 +128,8 @@
 .video-container {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  padding-top: 56.25%;
+  /* 16:9 Aspect Ratio */
   overflow: hidden;
 }
 
@@ -145,7 +158,7 @@
   padding: 10px;
   margin-bottom: 10px;
   background: white;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .news-image {
@@ -160,7 +173,8 @@
 /* Agenda */
 .container {
   display: flex;
-  flex-wrap: wrap; /* Menambahkan wrap untuk tata letak responsif */
+  flex-wrap: wrap;
+  /* Menambahkan wrap untuk tata letak responsif */
   justify-content: space-around;
   padding: 15px;
   background-color: #f8f9fa;
@@ -169,10 +183,12 @@
 .card {
   background-color: #fff;
   border-radius: 12px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: 30%; /* Menambahkan lebar untuk tampilan yang lebih panjang */
-  margin: 10px; /* Menambahkan margin untuk pemisahan card */
+  width: 30%;
+  /* Menambahkan lebar untuk tampilan yang lebih panjang */
+  margin: 10px;
+  /* Menambahkan margin untuk pemisahan card */
   transition: transform 0.3s;
 }
 
@@ -234,14 +250,15 @@
   border-radius: 10px;
   margin-top: 20px;
   cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* fitur kampus */
 #fitur-kampus {
   text-align: center;
   padding: 80px 0;
-  background-color: #f8f9fa; /* Warna latar belakang diperbaiki */
+  background-color: #f8f9fa;
+  /* Warna latar belakang diperbaiki */
 }
 
 #fitur-kampus .fk h1 {
@@ -258,7 +275,8 @@
 }
 
 #fitur-kampus .card-fitur {
-  background-color: #ffffff; /* Warna latar belakang diperbarui */
+  background-color: #ffffff;
+  /* Warna latar belakang diperbarui */
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -288,19 +306,22 @@
 }
 
 #fitur-kampus .card-fitur:hover::before {
-  opacity: 0; /* Menghilangkan latar belakang gambar saat dihover */
+  opacity: 0;
+  /* Menghilangkan latar belakang gambar saat dihover */
 }
 
 #fitur-kampus .card-fitur i {
   font-size: 2rem;
-  color: #151564; /* Warna ikon diperbarui */
+  color: #151564;
+  /* Warna ikon diperbarui */
   margin-bottom: 10px;
 }
 
 #fitur-kampus .card-fitur h2,
 #fitur-kampus .card-fitur p {
   margin: 0;
-  color: #343a40; /* Warna teks diperbarui */
+  color: #343a40;
+  /* Warna teks diperbarui */
 }
 
 
@@ -335,30 +356,38 @@
   }
 
   .footer-col .logo {
-  width: 180px; /* Sesuaikan ukuran sesuai kebutuhan */
-  height: auto; /* Biarkan tinggi otomatis agar proporsi gambar tetap */
-  align-items: center;  
-}
+    width: 180px;
+    /* Sesuaikan ukuran sesuai kebutuhan */
+    height: auto;
+    /* Biarkan tinggi otomatis agar proporsi gambar tetap */
+    align-items: center;
+  }
+
 
 
   .news-image {
     float: none;
-    width: 80%; /* Adjust width to be responsive */
+    width: 80%;
+    /* Adjust width to be responsive */
     height: auto;
     margin: 0 auto 10px;
   }
 
   .card {
-    width: 45%; /* Mengubah lebar card untuk layar yang lebih kecil */
+    width: 45%;
+    /* Mengubah lebar card untuk layar yang lebih kecil */
   }
 
   #fitur-kampus .container {
-    flex-direction: column; /* Mengubah tata letak menjadi satu kolom */
-    align-items: center; /* Pusatkan item di dalam kolom */
+    flex-direction: column;
+    /* Mengubah tata letak menjadi satu kolom */
+    align-items: center;
+    /* Pusatkan item di dalam kolom */
   }
 
   #fitur-kampus .card-fitur {
-    width: calc(100% - 30px); /* Lebar kartu 100% minus jarak antar kartu */
+    width: calc(100% - 30px);
+    /* Lebar kartu 100% minus jarak antar kartu */
   }
 }
 
@@ -370,23 +399,27 @@
   }
 
   .news-image {
-    width: 100%; /* Full width on smaller screens */
+    width: 100%;
+    /* Full width on smaller screens */
   }
 
   .news-title, .news-date, .news-content {
-    font-size: 14px; /* Adjust font size for readability on small devices */
+    font-size: 14px;
+    /* Adjust font size for readability on small devices */
   }
 
   .video-container {
-    height: 200px; /* Adjust video container height */
+    height: 200px;
+    /* Adjust video container height */
   }
 
   .play-icon {
-    font-size: 36px; /* Smaller play icon */
+    font-size: 36px;
+    /* Smaller play icon */
   }
 
   .card {
-    width: 90%; /* Mengubah lebar card untuk layar yang sangat kecil */
+    width: 90%;
+    /* Mengubah lebar card untuk layar yang sangat kecil */
   }
 }
-

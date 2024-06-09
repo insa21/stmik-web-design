@@ -468,6 +468,7 @@ nav .navigation ul li:hover>ul {
 /* Footer Section */
 footer {
   background-color: rgb(51, 51, 119);
+  /* background-color: #151564; */
   color: #fff;
   padding: 2vw 8vw;
   display: flex;
