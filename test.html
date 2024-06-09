@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tombol Kembali ke Atas</title>
+  <style>
+    /* CSS untuk tombol */
+    #backToTopBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      background-color: #555;
+      padding: 10px; /* Ubah padding untuk ukuran tombol */
+      border-radius: 50%;
+      cursor: pointer;
+      fill: white;
+      /* Warna ikon */
+      transition: background-color 0.3s ease;
+    }
+
+    #backToTopBtn:hover {
+      background-color: #000;
+    }
+
+    /* Animasi guliran ke atas */
+    html {
+      scroll-behavior: smooth; /* Aktifkan animasi gulir halus */
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- SVG icon -->
+  <a href="#top" id="backToTopBtn">
+    <!-- Isi SVG langsung -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+      <!-- Ganti path dengan path SVG Anda -->
+      <path d="M12 4L2 14h7v6h6v-6h7z" />
+    </svg>
+  </a>
+
+  <!-- Div di bagian atas halaman -->
+  <div id="top"></div>
+
+  <!-- Konten halaman -->
+  <div style="height: 1500px;">
+    <p>Gulir ke bawah untuk melihat tombol "Kembali ke Atas".</p>
+  </div>
+
+</body>
+
+</html>

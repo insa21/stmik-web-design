@@ -150,6 +150,7 @@ nav .navigation ul li:hover>ul {
 
 #home video {
   position: absolute;
+  /* margin-top: 20px; */
   top: 0;
   left: 0;
   width: 100%;
@@ -444,6 +445,18 @@ footer {
 
 footer .footer-col {
   padding-bottom: 40px;
+}
+
+
+.footer-col .logo {
+  width: 180px; /* Sesuaikan ukuran sesuai kebutuhan */
+  height: auto; /* Biarkan tinggi otomatis agar proporsi gambar tetap */
+}
+
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #7b838a;
 }
 
 footer h3 {
@@ -1092,7 +1105,7 @@ footer .copyright .pro-links i:hover {
   }
 
   nav img {
-    width: 130px;
+    width: 150px;
   }
 
   #menu-btn {
@@ -1102,8 +1115,8 @@ footer .copyright .pro-links i:hover {
   nav .navigation ul {
     position: absolute;
     top: 0;
-    right: -220px;
-    width: 220px;
+    right: -390px;
+    width: 390px;
     height: 100vh;
     background: rgba(17, 20, 104, 0.45);
     backdrop-filter: blur(4.5px);
@@ -1115,21 +1128,15 @@ footer .copyright .pro-links i:hover {
     transition: 0.3s ease;
   }
 
-  nav .navigation ul:hover {
-    /* position: absolute;
-    top: 0; */
-    /* right: -220px;
-    width: 220px;
-    height: 100vh; */
-    background: rgba(17, 20, 104, 0.45);
-    backdrop-filter: blur(4.5px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    /* display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start; */
-    /* transition: 0.3s ease; */
+  
+  nav .navigation ul ul {
+    position: static;
+    background-color: rgba(17, 20, 104, 0.45);
+    box-shadow: none;
+    padding: 0;
+    height: auto;
   }
+
   nav .navigation ul.active {
     right: 0;
   }
@@ -1242,6 +1249,7 @@ footer .copyright .pro-links i:hover {
   #contact .getin {
     width: 250px;
   }
+  
 
   @media (max-width: 475px) {
     #registration {
@@ -1325,8 +1333,6 @@ footer .copyright .pro-links i:hover {
     width: 40px;
     height: 40px;
   }
-
-
 
   @media (max-width: 376px) {
     footer input {

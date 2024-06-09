@@ -1,0 +1,26 @@
+/* styles.css */
+#backToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 100%;
+  font-size: px;
+  text-decoration: none;
+  font-weight: normal;
+  transition: background-color 0.3s ease;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+#backToTopBtn:hover {
+  background-color: #000;
+}

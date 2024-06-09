@@ -1,0 +1,85 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+#portal-jurnal {
+  padding: 50px 20px;
+  text-align: center;
+  background: #f0f0f5;
+}
+
+#portal-jurnal .container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+#portal-jurnal h1 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  color: #111468;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card-fitur {
+  background: #fff;
+  padding: 30px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-fitur:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-fitur i {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #111468;
+}
+
+.card-fitur p {
+  margin-bottom: 20px;
+  color: #111468;
+}
+
+.card-fitur .btn {
+  background: #111468;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.card-fitur .btn:hover {
+  background: #333;
+}
+
+@media (max-width: 768px) {
+  .cards {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .card-fitur {
+      width: 90%;
+      margin-bottom: 20px;
+  }
+}

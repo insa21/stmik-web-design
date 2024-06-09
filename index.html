@@ -13,6 +13,34 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="index.css">
+  <style>
+    /* CSS untuk tombol */
+    #backToTopBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      background-color: #555;
+      padding: 10px;
+      /* Ubah padding untuk ukuran tombol */
+      border-radius: 50%;
+      cursor: pointer;
+      fill: white;
+      /* Warna ikon */
+      transition: background-color 0.3s ease;
+    }
+
+    #backToTopBtn:hover {
+      background-color: #000;
+    }
+
+    /* Animasi guliran ke atas */
+    html {
+      scroll-behavior: smooth;
+      transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+      transition-duration: 1s;
+    }
+  </style>
 </head>
 
 <body>
@@ -20,57 +48,60 @@
   <!-- navigation -->
   <header>
     <nav>
-      <img src="images/stmik/logo/STMIK JABAR (1).png" alt="logo" class="logo">
+      <a href="index.html">
+        <img src="images/stmik/logo/STMIK JABAR (1).png" alt="logo" class="logo">
+      </a>
       <div class="navigation">
         <ul>
           <i id="menu-close" class="fas fa-times"></i><!-- Tombol Close -->
-          <li><a class="active" href="index.html">Home</a></li>
+          <li><a class="active" href="index.html">Beranda</a></li>
           <li>
-            <a href="#">Profile</a>
+            <a href="#">Tentang</a>
             <ul class="submenu">
-              <li><a href="history.html">Sejarah</a></li>
-              <li><a href="vision-mission.html">Visi Misi</a></li>
-              <li><a href="organizational-structure.html">Struktur Organisasi</a></li>
-              <li><a href="chairman-message.html">Sambutan Ketua</a></li>
-              <li><a href="lecturers.html">Dosen</a></li>
+              <li><a href="profile/sambutan.html">Sambutan Ketua</a></li>
+              <li><a href="profile/sejarah.html">Sejarah</a></li>
+              <li><a href="profile/visimisi.html">Visi Misi</a></li>
+              <li><a href="profile/struktur_organisasi.html">Struktur Organisasi</a></li>
+              <li><a href="profile/dosen.html">Dosen</a></li>
             </ul>
           </li>
           <li>
             <a href="#">Program Studi</a>
             <ul class="submenu">
-              <li><a href="informatics-engineering.html">Teknik Informatika</a></li>
-              <li><a href="information-systems.html">Sistem Informasi</a></li>
+              <li><a href="prodi/if.html">Teknik Informatika</a></li>
+              <li><a href="prodi/si.html">Sistem Informasi</a></li>
             </ul>
           </li>
-          <li>
+          <!-- <li>
             <a href="#">Siaplus</a>
             <ul class="submenu">
               <li><a href="student-portal.html">Portal Mahasiswa</a></li>
               <li><a href="lecturer-portal.html">Portal Dosen</a></li>
             </ul>
-          </li>
+          </li> -->
           <li>
             <a href="#">Kemahasiswaan</a>
             <ul class="submenu">
-              <li><a href="student-activities.html">Kegiatan Mahasiswa</a></li>
-              <li><a href="scholarship-info.html">Info Beasiswa</a></li>
-              <li><a href="student-regulations.html">Tata Tertib Mahasiswa</a></li>
+              <li><a href="kemahasiswaan/kegiatan_mahasiswa.html">Kegiatan Mahasiswa</a></li>
+              <li><a href="kemahasiswaan/beasiswa.html">Info Beasiswa</a></li>
+              <li><a href="kemahasiswaan/tata_tertib.html">Tata Tertib Mahasiswa</a></li>
             </ul>
           </li>
           <li>
-            <a href="#">Alumni</a>
+            <a href="">Alumni</a>
             <ul class="submenu">
-              <li><a href="testimonials.html">Testimoni</a></li>
-              <li><a href="forum.html">Forum</a></li>
+              <li><a href="alumni/forum.html">Forum</a></li>
+              <li><a href="alumni/">Testimoni</a></li>
             </ul>
           </li>
           <li>
-            <a href="#">Pendaftaran</a>
-            <ul class="submenu">
+            <a href="https://pmb.stmikjabar.ac.id/">Pendaftaran</a>
+            <!-- <ul class="submenu">
               <li><a href="register.html">Daftar</a></li>
               <li><a href="registration-guide.html">Panduan Pendaftaran</a></li>
               <li><a href="tuition-fees.html">Biaya Kuliah</a></li>
-            </ul>
+              <li><a href="tuition-fees.html">Biaya Kuliah</a></li>
+            </ul> -->
           </li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -80,8 +111,19 @@
   </header>
 
 
-
   <main>
+    <!-- SVG icon -->
+    <a href="#top" id="backToTopBtn">
+      <!-- Isi SVG langsung -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+        <!-- Ganti path dengan path SVG Anda -->
+        <path d="M12 4L2 14h7v6h6v-6h7z" />
+      </svg>
+    </a>
+
+    <!-- Div di bagian atas halaman -->
+    <div id="top"></div>
+
     <!--Benner Utama  -->
     <section id="home">
       <video src="images/stmik/banner.mp4" autoplay loop muted></video>
@@ -121,46 +163,57 @@
     </section>
 
 
-
     <!-- Fitur Kampus -->
     <section id="fitur-kampus">
       <div class="fk">
-        <!-- <h1>Fitur Unggulan Kampus</h1> -->
+        <h1>Fitur Unggulan</h1>
       </div>
 
       <div class="container">
         <div class="card-fitur">
-          <i class="fas fa-graduation-cap"></i>
-          <p>E-Learning</p>
+          <a href="#">
+            <i class="fas fa-graduation-cap"></i>
+            <p>E-Learning</p>
+          </a>
         </div>
 
         <div class="card-fitur">
-          <i class="fas fa-calendar-alt"></i>
-          <p>SiapLush</p>
+          <a href="siaplus/siaplus.html">
+            <i class="fas fa-calendar-alt"></i>
+            <p>Siaplus</p>
+          </a>
         </div>
 
         <div class="card-fitur">
-          <i class="fas fa-book"></i>
-          <p>Perpustakaan Digital</p>
+          <a href="#">
+            <i class="fas fa-book-open"></i>
+            <p>Perpustakaan Digital</p>
+          </a>
         </div>
 
         <div class="card-fitur">
-          <i class="fas fa-newspaper"></i>
-          <p>Portal Berita</p>
+          <a href="https://blog.stmikjabar.ac.id/" target="_blank">
+            <i class="fas fa-newspaper"></i>
+            <p>Portal Berita</p>
+          </a>
         </div>
 
         <div class="card-fitur">
-          <i class="fas fa-user-graduate"></i>
-          <p>Penerimaan Mahasiswa Baru</p>
+          <a href="https://pmb.stmikjabar.ac.id/" target="_blank">
+            <i class="fas fa-user-graduate"></i>
+            <p>Penerimaan Mahasiswa Baru</p>
+          </a>
         </div>
 
         <div class="card-fitur">
-          <i class="fas fa-users"></i>
-          <p>Komunitas Kampus</p>
+          <a href="https://journal.stmikjabar.ac.id/index.php/i" target="_blank">
+            <i class="fas fa-book"></i>
+            <p>Jurnal Kampus</p>
+          </a>
         </div>
       </div>
-
     </section>
+
 
 
     <!-- Features -->
@@ -447,7 +500,7 @@
     <section id="news">
       <div class="container">
         <div class="left-column">
-          <h2>Campus Video</h2>
+          <h2>Kampus Video</h2>
           <div class="video-container">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/5A8IE1Ahjgs?si=Ty3bNMS2eJS3JlOy"
               title="YouTube video player" frameborder="0"
@@ -497,40 +550,40 @@
               </div>
             </div>
           </div>
-          <a href="blog.html">Berita Selengkapnya →</a>
+          <a href="https://blog.stmikjabar.ac.id/" target="_blank">Berita Selengkapnya →</a>
         </div>
       </div>
     </section>
 
 
-    <!-- Registration  -->
+    <!-- Pendaftaran -->
     <section id="registration">
       <div class="reminder">
-        <p>Get 100 online course of free</p>
-        <h1>Register to get it</h1>
+        <p>Menghasilkan lulusan berkualitas unggul dan berkarakter</p>
+        <h1>Daftar untuk mendapatkannya</h1>
         <div class="time">
           <div class="date">
-            18 <br> Days
+            18 <br> Hari
           </div>
           <div class="date">
-            23 <br> Hours
+            23 <br> Jam
           </div>
           <div class="date">
-            06 <br> Minutes
+            06 <br> Menit
           </div>
           <div class="date">
-            58 <br> Second
+            58 <br> Detik
           </div>
         </div>
       </div>
 
       <div class="form">
-        <h3>Create free account now</h3>
-        <input type="text" name="Name" placeholder="Name">
+        <h3>Buat akun gratis sekarang</h3>
+        <input type="text" name="name" placeholder="Nama">
         <input type="email" name="email" placeholder="Email">
-        <input type="number" name="Phone" placeholder="Phone">
+        <input type="tel" name="phone" placeholder="Nomor Telepon">
         <div class="btn">
-          <a class="yellow" href="">Submit Form</a>
+          <a class="yellow" href="#">Daftar Sekarang</a>
         </div>
       </div>
     </section>
@@ -538,49 +591,41 @@
 
     <footer>
       <div class="footer-col">
-        <h3>Top Products</h3>
-        <li>Manage Reputation</li>
-        <li>Power Tools</li>
-        <li>Managed Website</li>
-        <li>Market Service</li>
+        <img src="images/stmik/logo/1/file (1).png" alt="logo" class="logo">
       </div>
       <div class="footer-col">
-        <h3>Top Products</h3>
-        <li>Manage Reputation</li>
-        <li>Power Tools</li>
-        <li>Managed Website</li>
-        <li>Market Service</li>
+        <h3>Tentang Kami</h3>
+        <ul>
+          <li><a href="profile.html">Profil Universitas</a></li>
+          <li><a href="history.html">Sejarah</a></li>
+          <li><a href="vision-mission.html">Visi dan Misi</a></li>
+          <li><a href="contact.html">Kontak</a></li>
+        </ul>
       </div>
       <div class="footer-col">
-        <h3>Top Products</h3>
-        <li>Manage Reputation</li>
-        <li>Power Tools</li>
-        <li>Managed Website</li>
-        <li>Market Service</li>
+        <h3>Akademik</h3>
+        <ul>
+          <li><a href="programs.html">Program Studi</a></li>
+          <li><a href="admissions.html">Penerimaan Mahasiswa</a></li>
+          <li><a href="academic-calendar.html">Kalender Akademik</a></li>
+          <li><a href="library.html">Perpustakaan</a></li>
+        </ul>
       </div>
       <div class="footer-col">
-        <h3>Top Products</h3>
-        <li>Manage Reputation</li>
-        <li>Power Tools</li>
-        <li>Managed Website</li>
-        <li>Market Service</li>
+        <h3>Mahasiswa</h3>
+        <ul>
+          <li><a href="student-services.html">Layanan Mahasiswa</a></li>
+          <li><a href="scholarships.html">Beasiswa</a></li>
+          <li><a href="student-activities.html">Kegiatan Mahasiswa</a></li>
+          <li><a href="alumni.html">Alumni</a></li>
+        </ul>
       </div>
-
-      <div class="footer-col">
-        <h3>Newsletter</h3>
-        <p>You can trust us. we only send promo offers, </p>
-        <div class="subscribe">
-          <input type="text" placeholder="Your Email Address">
-          <a href="#" class="yellow">SUBSCRIBE</a>
-        </div>
-      </div>
-
       <div class="copyright">
-        <p>Copyright &copy; 2024 All rights reseverved | This template is made by Indra Saepudin</p>
+        <p>Copyright &copy; 2024 All rights reserved | This website is made by Indra Saepudin</p>
         <div class="pro-links">
-          <i class="fab fa-facebook-f"></i>
-          <i class="fab fa-instagram"></i>
-          <i class="fab fa-linkedin-in"></i>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
         </div>
       </div>
     </footer>
