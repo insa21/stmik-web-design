@@ -1,0 +1,14 @@
+<html>
+<script>
+  document.getElementById('menu-btn').addEventListener('click', function () {
+    var nav = document.querySelector('nav .navigation ul');
+    nav.classList.toggle('active');
+  });
+
+  document.getElementById('menu-close').addEventListener('click', function () {
+    var nav = document.querySelector('nav .navigation ul');
+    nav.classList.remove('active');
+  });
+</script>
+
+</html>

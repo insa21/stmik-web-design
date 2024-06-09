@@ -55,14 +55,6 @@
   background-color: #0a0a56;
 }
 
-/* Footer Section */
-footer {
-  background-color: #151564;
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .container {

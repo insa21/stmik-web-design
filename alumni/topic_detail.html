@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> - STMIK Jabar</title>
+  <title>Forum - STMIK Jabar</title>
   <meta name="description"
     content="STMIK Jabar menawarkan program pendidikan lengkap untuk belajar desain web dari para ahli. Pelajari HTML, CSS, JavaScript, dan banyak lagi di STMIK Jabar.">
   <meta name="keywords"
@@ -33,7 +33,7 @@
       <div class="navigation">
         <ul>
           <i id="menu-close" class="fas fa-times"></i><!-- Tombol Close -->
-          <li><a class="active" href="../index.html">Beranda</a></li>
+          <li><a href="../index.html">Beranda</a></li>
           <li>
             <a href="#">Tentang</a>
             <ul class="submenu">
@@ -67,7 +67,7 @@
             </ul>
           </li>
           <li>
-            <a href="#">Akademik</a>
+            <a class="active" href="#">Akademik</a>
             <ul class="submenu">
               <li><a href="../alumni/forum.html">Forum</a></li>
               <li><a href="../alumni/kalender.html">Kalender Akademik</a></li>
@@ -94,7 +94,7 @@
 
   <!-- Home -->
   <section id="about-home">
-    <h2>Kemahasiswaan / Beasiswa</h2>
+    <h2>Akademik / Forum / Framework Web Terbaik</h2>
     </div>
   </section>
 
@@ -131,37 +131,63 @@
   </section>
 
   <footer>
-    <div class="footer-content">
-      <div class="footer-col">
-        <h3>Contact Us</h3>
-        <ul>
-          <li>Email: info@stmikjabar.ac.id</li>
-          <li>Phone: (022) 1234567</li>
-          <li>Address: Jl. Merdeka No. 10, Bandung</li>
-        </ul>
+    <div class="footer-col">
+      <img src="../images/stmik/logo/1/file (1).png" alt="logo" class="logo">
+      <!-- <img src="images/stmik/logo/Kampus Merdeka.png" alt="logo" class="logo"> -->
+    </div>
+    <div class="footer-col">
+      <h3>Tentang Kami</h3>
+      <ul>
+        <li><a href="profile/sambutan.html">Sambutan Ketua</a></li>
+        <li><a href="profile/sejarah.html">Sejarah</a></li>
+        <li><a href="profile/visimisi.html">Visi dan Misi</a></li>
+        <li><a href="profile/struktur_organisasi.html">Struktur Organisasi</a></li>
+        <li><a href="contact.html">Kontak</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Akademik</h3>
+      <ul>
+        <li><a href="kemahasiswaan/kegiatan_mahasiswa.html">Kegiatan Mahasiswa</a></li>
+        <li><a href="alumni/forum.html">Forum</a></li>
+        <li><a href="alumni/kalender.html">Kalender Akademik</a></li>
+        <li><a href="https://pmb.stmikjabar.ac.id/" target="_blank">Pendaftaran</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Kontak Kami</h3>
+      <ul>
+        <li>Alamat: Jl. Soekarno-Hatta No. 777 Bandung</li>
+        <li>TELP/FAX: (022) 7335108</li>
+        <li>EMAIL: info@stmikjabar.ac.id</li>
+      </ul>
+    </div>
+    <div class="copyright">
+      <p>Copyright &copy; 2024 All rights reserved | This website is made by <a
+          href="https://indrasaepudin.netlify.app/" target="_blank" style="text-decoration: none; color: #fff;">
+          <b>Indra
+            Saepudin</b></a>
+      </p>
+      <div class="pro-links">
+        <a href="https://www.facebook.com/stmikjabar/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/stmikjabar/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/school/stmik-jabar/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2024 STMIK JABAR. All rights reserved.</p>
-    </div>
   </footer>
-</body>
-<script>
-  // JavaScript untuk toggle menu pada mobile
-  document.addEventListener('DOMContentLoaded', function () {
-    const menuBtn = document.getElementById('menu-btn');
-    const menuClose = document.getElementById('menu-close');
-    const nav = document.querySelector('nav .navigation');
-
-    menuBtn.addEventListener('click', function () {
-      nav.classList.add('active');
+  </main>
+  <script>
+    document.getElementById('menu-btn').addEventListener('click', function () {
+      var nav = document.querySelector('nav .navigation ul');
+      nav.classList.toggle('active');
     });
 
-    menuClose.addEventListener('click', function () {
+    document.getElementById('menu-close').addEventListener('click', function () {
+      var nav = document.querySelector('nav .navigation ul');
       nav.classList.remove('active');
     });
-  });
+  </script>
 
-</script>
+</body>
 
 </html>
